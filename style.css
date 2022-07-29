@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background-image: url(/assets/grilla.png);
+    background-color:#2A6041 ;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Pixelopolis;
+    src: url(./assets/Pixelopolis.ttf);
+}
+h2 {
+    font-family: Pixelopolis;
+    font-size: 200px;
+    color:#F6AE2D;
+    text-align: center;
+    border: 2px, solid, #F6AE2D;
+    box-sizing: content-box;
+}
+/*#2A4849  VERDE*/
+/*#F6AE2D AMARILLO*/
+/*#2A6041 VERDE*/
