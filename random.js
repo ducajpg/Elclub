@@ -2,10 +2,10 @@
 
 // 
 
-function bienvenidx(){
-    let nombre = prompt("Ingrese nombre")
-    alert("Bienvenidx al Club del VHS, "+ nombre)
-}
+// function bienvenidx(){
+//     let nombre = prompt("Ingrese nombre")
+//     alert("Bienvenidx al Club del VHS, "+ nombre)
+// }
 
 
 function peliculaRandom (genero){
@@ -28,10 +28,17 @@ function peliculaRandom (genero){
     }
     return x;
 }
-bienvenidx();
-let genero = prompt("La selección de peliculas random de la semana. \n ¿Qué genero de pelicula querés ver?  \n ingrese % para salir");
+
+// let boton = document.getElementById("botonRandom");
+// boton.addEventListener("click" , () => {
+//     let genero = prompt("La selección de peliculas random de la semana. \n ¿Qué genero de pelicula querés ver?  \n ingrese % para salir");
+// })
+
+
+
+let genero = prompt("La selección de peliculas random de la semana. \n ¿Qué genero de pelicula querés ver?  \n ingrese & para salir");
 while (genero != "&"){
     resultado = peliculaRandom(genero);
     alert("Tu peli random del día es: " + resultado)
-    genero = prompt("Qué genero de pelicula querés ver?  \n ingrese % para salir");
+    genero = prompt("Qué genero de pelicula querés ver?  \n ingrese & para salir");
 }

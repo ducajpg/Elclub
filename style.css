@@ -5,12 +5,28 @@
     list-style-type: none;
     text-decoration: none;
 }
+
+/* .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+} */
+
 body{
-    background-image: url(/assets/grilla.png);
-    background-color:#2A6041 ;
+    /* background-image: url(/assets/grilla.png); */
     width: 100%;
     height: 100%;
+    background: linear-gradient(
+        to right,
+        #2A6041 0%,
+        #2A6041 50%,
+        #F6AE2D 50%,
+        #F6AE2D 100%
+    );
 }
+
 
 @font-face {
     font-family: Pixelopolis;
@@ -23,7 +39,10 @@ h2 {
     text-align: center;
     border: 2px, solid, #F6AE2D;
     box-sizing: content-box;
+    display: flex;
+    justify-content: center;
 }
+
 /*#2A4849  VERDE*/
 /*#F6AE2D AMARILLO*/
 /*#2A6041 VERDE*/

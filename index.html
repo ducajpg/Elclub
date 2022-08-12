@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/css-bt/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
@@ -11,30 +13,57 @@
     </style> 
 </head>
 <body>
+    <main class="container">
     <h2>El Club</h2>
     <h3>¿Cuál opción elegís?</h3>
-    <div>
-        <ul>
-            <!-- Pelicula random de la semana -->
-            <li>La elijo por vos</li>
-            <script src="./random.js"></script>
-            <!-- Funcion que filtre generos1 y generos2 y te devuelva una pelicula con genero1 y 2 -->
-            <li>Mezclemos generos</li>
-            <script src="./choice.js"></script>
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <!-- Pelicula random de la semana -->
+                    <h3>Las peliculas de la semana</h3>
+                    <button class="randomTerror">Terror</button>
+                    <button class="randomComedia">Comedia</button>
+                    <button class="randomSuspenso">Suspenso</button>
+                    <button class="randomScifi">Sci-fi</button>
+                    <!-- Filtrar opciones-->           
+                </ul>
+            </div>
+            <div class="col">
+                <h3>¿Qué tipo de pelicula?</h3>
+                <div>
+                    <div>
+                    <label for="opciones"></label>
+                    <select name="genero" id="">
+                        <option value="terror">Terror</option>
+                        <option value="Accion & aventuras">Acción & aventuras</option>
+                        <option value="Anime">Anime</option>
+                        <option value="Biografía">Biografía</option>
+                        <option value="Comedia">Comedia</option>
+                        <option value="Crimen">Crimen</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Fantasia">Fantasía</option>
+                        <option value="Sci-fi">Sci-fi</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="ranking"></label>
+                    <select name="" id="">
+                        <option value="mayor9">>9</option>
+                        <option value="mayor8">>8</option>
+                        <option value="mayor7">>7</option>
+                        <option value="mayor6">>6</option>
+                        <option value="mayor5">>5</option>
+                        <option value="cualquier">Cualquier</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <footer>
-        <ul>
-            <li>
-                Lista de peliculas
-            </li>
-            <li>
-                ¿Como hago para añadir una pelicula?
-            </li>
-            <li>
-                ¿Qué es El Club?
-            </li>
-        </ul>
-    </footer>
+    </main>
+    <!-- <script src="./random.js"></script> -->
+    <script src="./choice.js"></script> 
 </body>
 </html>

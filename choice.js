@@ -1,10 +1,10 @@
 class Peliculas{
-    constructor(titulo, estreno, genero, genero2, calificacion){
+    constructor(titulo, estreno, genero, genero2, ranking){
         this.titulo = titulo;
         this.estreno = estreno;
         this.genero = genero;
         this.genero2 = genero2;
-        this.calificacion = calificacion
+        this.ranking = ranking
     }
 }
 const pelis = [];
@@ -23,4 +23,10 @@ pelis.push(new Peliculas("Matrix", 1999, "accion", "sci-fi", 8.7))
 
 let pelisBuscada = prompt("Ingrese el genero que busca")
 const pelisEncontradas = pelis.filter(e => e.genero.includes (pelisBuscada))
-console.log(pelisEncontradas)
+console.log(pelisEncontradas);
+
+// const resultado = pelis.filter(elemento => {
+//     return elemento.genero === "comedia" && elemento.ranking === "8.1";
+// });
+
+// console.log(resultado);
