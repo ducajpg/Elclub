@@ -1,17 +1,14 @@
-
-
-// 
-
 // function bienvenidx(){
 //     let nombre = prompt("Ingrese nombre")
 //     alert("Bienvenidx al Club del VHS, "+ nombre)
 // }
+const randomTerror = document.getElementById("randomTerror");
 
 
 function peliculaRandom (genero){
     let x;
     switch(genero) {
-        case "terror":
+        case randomTerror:
             x = "Get Out: Un joven va por primera vez a la casa de sus futuros suegros, una serie de descubrimientos hacen ese encuentro inquietante";
             break;
         case "comedia":
@@ -29,16 +26,6 @@ function peliculaRandom (genero){
     return x;
 }
 
-// let boton = document.getElementById("botonRandom");
-// boton.addEventListener("click" , () => {
-//     let genero = prompt("La selección de peliculas random de la semana. \n ¿Qué genero de pelicula querés ver?  \n ingrese % para salir");
-// })
-
-
-
-let genero = prompt("La selección de peliculas random de la semana. \n ¿Qué genero de pelicula querés ver?  \n ingrese & para salir");
-while (genero != "&"){
-    resultado = peliculaRandom(genero);
-    alert("Tu peli random del día es: " + resultado)
-    genero = prompt("Qué genero de pelicula querés ver?  \n ingrese & para salir");
-}
+randomTerror.addEventListener("click", () => {
+    alert("hola");
+});

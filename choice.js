@@ -4,7 +4,7 @@ class Peliculas{
         this.estreno = estreno;
         this.genero = genero;
         this.genero2 = genero2;
-        this.ranking = ranking
+        this.ranking = parseFloat(ranking);
     }
 }
 const pelis = [];
@@ -19,14 +19,29 @@ pelis.push(new Peliculas("Clueless", 1995, "comedia", "romance", 6.9))
 pelis.push(new Peliculas("El padrino", 1972, "crimen", "drama", 9.2))
 pelis.push(new Peliculas("Matrix", 1999, "accion", "sci-fi", 8.7))
 
+const inputPeli = document.getElementById('inputPeli');
+localStorage.setItem('nombre', inputPeli);
+// let filtrogenero = prompt("Ingrese el genero que busca")
+// const filtrogenero = pelis.filter(e => e.genero.includes (pelisBuscada))
+// console.log(filtrogenero);
 
+const opcionesRanking = document.getElementById('opcionesRanking').value;
+parseInt(opcionesRanking);
 
-let pelisBuscada = prompt("Ingrese el genero que busca")
-const pelisEncontradas = pelis.filter(e => e.genero.includes (pelisBuscada))
-console.log(pelisEncontradas);
+const opcionesGenero = document.getElementById('opcionesGenero').value;
+let filtroGenero = () => {
+    opcionesGenero = pelis.filter(e => e.genero.includes (pelisBuscada))
+    console.log(filtrogenero);
+
+}
 
 // const resultado = pelis.filter(elemento => {
 //     return elemento.genero === "comedia" && elemento.ranking === "8.1";
 // });
 
 // console.log(resultado);
+
+function filtroRanking (Peliculas){
+    return this.ranking >= opcionesRanking
+}
+console.log(filtroRanking());

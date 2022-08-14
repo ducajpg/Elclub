@@ -14,18 +14,20 @@
 </head>
 <body>
     <main class="container">
+    <header>    <div>peliculas vistas<input type="text" id="inputPeli"><button>submit</button></div></header>
     <h2>El Club</h2>
     <h3>¿Cuál opción elegís?</h3>
+
     <div class="container">
         <div class="row">
             <div class="col">
                 <ul>
                     <!-- Pelicula random de la semana -->
                     <h3>Las peliculas de la semana</h3>
-                    <button class="randomTerror">Terror</button>
-                    <button class="randomComedia">Comedia</button>
-                    <button class="randomSuspenso">Suspenso</button>
-                    <button class="randomScifi">Sci-fi</button>
+                    <button id="randomTerror">Terror</button>
+                    <button id="randomComedia">Comedia</button>
+                    <button id="randomSuspenso">Suspenso</button>
+                    <button id="randomScifi">Sci-fi</button>
                     <!-- Filtrar opciones-->           
                 </ul>
             </div>
@@ -34,7 +36,7 @@
                 <div>
                     <div>
                     <label for="opciones"></label>
-                    <select name="genero" id="">
+                    <select name="opcionesGenero" id="opcionesGenero">
                         <option value="terror">Terror</option>
                         <option value="Accion & aventuras">Acción & aventuras</option>
                         <option value="Anime">Anime</option>
@@ -48,7 +50,7 @@
                     </div>
                     <div>
                     <label for="ranking"></label>
-                    <select name="" id="">
+                    <select name="" id="opcionesRanking">
                         <option value="mayor9">>9</option>
                         <option value="mayor8">>8</option>
                         <option value="mayor7">>7</option>
@@ -63,7 +65,7 @@
 
     </div>
     </main>
-    <!-- <script src="./random.js"></script> -->
+    <script src="./random.js"></script>
     <script src="./choice.js"></script> 
 </body>
 </html>
